@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-iwov
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay_xjiang/release-e2e-deploy-tenant/appstudio/dc-metro-map-iwov@sha256:45ad714b1d52fc05458d911522996aa192b554a24d062a045699bc8cd325b134
+        name: my-nodejs
+        resources: {}
+status: {}
